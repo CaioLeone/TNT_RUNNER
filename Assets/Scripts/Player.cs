@@ -40,6 +40,9 @@ public class Player : MonoBehaviour
     private UIManager uiManager;
     private int coins;
 
+    public GameObject gameOver;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,19 +64,19 @@ public class Player : MonoBehaviour
 
     void PlayerInputs()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A) && currentLife > 0)
         {
             ChangeLane(-2);
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D) && currentLife > 0)
         {
             ChangeLane(2);
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) && currentLife > 0)
         {
             Jump();
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S) && currentLife > 0)
         {
             Slide();
         }
@@ -183,6 +186,8 @@ public class Player : MonoBehaviour
                 animator.SetBool("dead", true);
 
                 playerSpeed = 0;
+                gameOver.SetActive(true);
+
             }
             else
             {
