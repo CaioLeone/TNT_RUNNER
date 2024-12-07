@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Runner.unity
     guid: fcb5191b189caf1458ea2b803e212dad
   - enabled: 1
+    path: Assets/Scenes/Main_Tutorial.unity
+    guid: 678d462d33ebdd7419400a9476bf6759
+  - enabled: 1
     path: Assets/Scenes/TNTRunner_Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:

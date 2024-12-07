@@ -6,19 +6,12 @@ public class ChangeLane : MonoBehaviour
 {
     public void PositionLane()
     {
-        int randomLane = Random.Range(-2, 2);
+        int randomLane;
+        do
+        {
+            randomLane = Random.Range(-2, 3); // Gera valores de -2, -1, 0, 1, 2
+        } while (randomLane == -1 || randomLane == 1); // Re-sorteia se for -1 ou 1
+
         transform.position = new Vector3(randomLane, transform.position.y, transform.position.z);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
