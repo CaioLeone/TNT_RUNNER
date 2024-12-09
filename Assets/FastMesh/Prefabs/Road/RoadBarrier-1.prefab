@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6740113937304721357}
   - component: {fileID: 3048319941839487114}
+  - component: {fileID: 1544681099229390558}
   m_Layer: 0
   m_Name: RoadBarrier-1
   m_TagString: Obstacle
@@ -221,8 +222,20 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.93365383, z: 0.13}
+  m_Size: {x: 1.45, y: 0.93, z: 0.13}
   m_Center: {x: 0, y: 0.46, z: 0}
+--- !u!114 &1544681099229390558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6251666189375065463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26c8616c5d932c43a118b01c2dfc39e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7328177842769079452
 GameObject:
   m_ObjectHideFlags: 0

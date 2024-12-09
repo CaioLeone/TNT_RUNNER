@@ -88,7 +88,6 @@ public class Track : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             transform.position = new Vector3(0, 0, transform.position.z + sizeMap * 2);            
-            //Invoke("PositionMap", 4f);
             PositionObstacleMap();
             PositionCoinCanMap();
         }
