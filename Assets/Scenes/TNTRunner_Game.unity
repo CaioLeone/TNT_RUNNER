@@ -528,6 +528,7 @@ MonoBehaviour:
   jumpAudio: {fileID: 1645052588}
   hitAudio: {fileID: 310990469}
   slideAudio: {fileID: 143913342}
+  switchLaneAudio: {fileID: 1579107656}
   gameOver: {fileID: 923361749}
 --- !u!65 &363433563
 BoxCollider:
@@ -831,12 +832,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3e5e5f9e80a16bd44885131ee3cd87b6,
         type: 3}
       propertyPath: m_Name
-      value: TPose-TextureFix 3
+      value: TPose-Azul
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3e5e5f9e80a16bd44885131ee3cd87b6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1185,7 +1186,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 36d2f67c01e364846bda1ba085b04d6d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2820,6 +2821,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531126801}
   m_CullTransparentMesh: 1
+--- !u!1 &1579107655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579107657}
+  - component: {fileID: 1579107656}
+  m_Layer: 0
+  m_Name: SFX_SwitchLane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1579107656
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579107655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 14932af488536a5498031aedd056c007, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1579107657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579107655}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613038347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,6 +3454,7 @@ MonoBehaviour:
   jumpAudio: {fileID: 0}
   hitAudio: {fileID: 0}
   slideAudio: {fileID: 0}
+  switchLaneAudio: {fileID: 0}
   gameOver: {fileID: 0}
 --- !u!54 &1675238312
 Rigidbody:
@@ -3591,7 +3721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeMap: 481
   obstacles:
-  - {fileID: 3756042652307450312, guid: 208775c8a13e42140b7f095b695ac432, type: 3}
+  - {fileID: 7199295224408401343, guid: c96a99e38e63706499b7a60331859353, type: 3}
   - {fileID: 3425577007397672280, guid: ff97efd76b59e374d90631f2cfa983b7, type: 3}
   - {fileID: 1806809974762188837, guid: 1786ec42cbd9004459546faddd915e68, type: 3}
   numberOfObstacles: {x: 15, y: 20}
@@ -3636,7 +3766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1820550342
 Transform:
   m_ObjectHideFlags: 0
@@ -3652,9 +3782,9 @@ Transform:
   m_Children:
   - {fileID: 1827069574}
   - {fileID: 2043564239}
+  - {fileID: 626193070}
   - {fileID: 1956259398}
   - {fileID: 1230107871}
-  - {fileID: 626193070}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1827069573
@@ -3743,7 +3873,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c4dfbaa4bf284484c8f01174b9de6f2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3989,7 +4119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeMap: 481
   obstacles:
-  - {fileID: 3756042652307450312, guid: 208775c8a13e42140b7f095b695ac432, type: 3}
+  - {fileID: 7199295224408401343, guid: c96a99e38e63706499b7a60331859353, type: 3}
   - {fileID: 3425577007397672280, guid: ff97efd76b59e374d90631f2cfa983b7, type: 3}
   - {fileID: 1806809974762188837, guid: 1786ec42cbd9004459546faddd915e68, type: 3}
   numberOfObstacles: {x: 15, y: 20}
@@ -4274,7 +4404,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 545d3c618553cb74ab20cd0037d6494d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4378,6 +4508,7 @@ SceneRoots:
   - {fileID: 310990470}
   - {fileID: 143913343}
   - {fileID: 1647993404}
+  - {fileID: 1579107657}
   - {fileID: 131358924}
   - {fileID: 866856332}
   - {fileID: 733233276}

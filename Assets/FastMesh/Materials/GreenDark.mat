@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GreenDark
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 35842900d93ad544cbd375050176c6a9, type: 2}
+  m_Parent: {fileID: 2100000, guid: 2b675f66e60c68a41979d5f80bedf312, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -43,5 +43,5 @@ Material:
     - _Metallic: 0.331
     - _Smoothness: 0.429
     m_Colors:
-    - _Color: {r: 0.8207547, g: 0.8144749, b: 0.6929957, a: 1}
+    - _Color: {r: 0.31149876, g: 0.5283019, b: 0.31685248, a: 1}
   m_BuildTextureStacks: []

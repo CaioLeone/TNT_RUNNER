@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     public AudioSource jumpAudio;
     public AudioSource hitAudio;
     public AudioSource slideAudio;
-    //public AudioSource runAudio;
+    public AudioSource switchLaneAudio;
     //public AudioSource gameOverAudio;
 
     private UIManager uiManager;
@@ -87,10 +87,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A) && currentLife > 0)
         {
             ChangeLane(-2);
+            switchLaneAudio.Play();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D) && currentLife > 0)
         {
             ChangeLane(2);
+            switchLaneAudio.Play();
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) && currentLife > 0)
         {
@@ -158,7 +160,6 @@ public class Player : MonoBehaviour
             animator.SetFloat("jumpSpeed", playerSpeed / jumpLength);
             animator.SetBool("jumping", true);
             jumping = true;
-
         }
     }
 
